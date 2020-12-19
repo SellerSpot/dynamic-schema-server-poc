@@ -1,3 +1,15 @@
-# core-server
+# scalable-node-starter
 
-core server is the heart of the sellerspot eco-system, it will hold perform opearation such as creating and managing tenants, hold the billing status of the tenant, install and customize application and more.
+```
+    Node starter with Typescript support built with webpack
+
+    features:-
+        + webpack
+        + prettier
+        + eslint
+        + tsconfigPathsPlugin
+        + forkTsCheckerWebpackPlugin
+
+    FEEL FREE TO RESTRUCTURE AS PER YOUR PROJECT NEEDS.
+
+```
