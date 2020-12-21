@@ -8,8 +8,8 @@ import nodeExternals from 'webpack-node-externals';
 import packageJson from './package.json';
 
 const webpackConfiguration = (env: {
-    production: boolean;
-    development: boolean;
+    production?: boolean;
+    development?: boolean;
 }): Configuration => {
     const isProduction = env.production ? true : false;
     return {
@@ -38,7 +38,7 @@ const webpackConfiguration = (env: {
         },
         plugins: [
             new webpack.DefinePlugin({
-                'process.env.ENV': isProduction ? 'production' : 'development',
+                'process.env.ENV': JSON.stringify(isProduction ? 'production' : 'development'),
                 'process.env.APP_NAME': JSON.stringify(packageJson.name),
                 'process.env.APP_VERSION': JSON.stringify(packageJson.version),
             }),
