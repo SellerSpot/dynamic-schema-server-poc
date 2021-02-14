@@ -30,7 +30,7 @@ const webpackConfiguration = (env: {
                     test: /\.tsx?$/,
                     loader: 'ts-loader',
                     options: {
-                        transpileOnly: true,
+                        transpileOnly: false,
                     },
                     exclude: [/dist/, /node_modules/],
                 },
