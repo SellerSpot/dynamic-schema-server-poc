@@ -38,7 +38,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "fork-ts-checker-webpack-plugin": "^6.0.7",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.20",
     "prettier": "^2.2.1",
     "ts-loader": "^8.0.12",
     "ts-node": "^9.1.1",
